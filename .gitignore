@@ -1,0 +1,14 @@
+# Local secrets — never commit
+.env
+
+# Claude Code local settings
+.claude/settings.local.json
+
+# Local test artifacts
+state_test.json
+*.har
+cookies.txt
+jar.txt
+login_resp.json
+schedule_resp.json
+sched_*.json
