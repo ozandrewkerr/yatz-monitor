@@ -1,0 +1,44 @@
+name: YATZ openings monitor
+
+on:
+  schedule:
+    # Every 5 minutes. GitHub's scheduler is best-effort and often drifts to
+    # 5-15 min under load. Scheduled runs only fire on the default branch, and
+    # GitHub disables schedules after 60 days of repo inactivity.
+    - cron: '*/5 * * * *'
+  workflow_dispatch: {}   # lets you run it on demand from the Actions tab
+
+permissions:
+  contents: write          # needed to commit the updated state.json
+
+concurrency:
+  group: yatz-monitor
+  cancel-in-progress: false
+
+jobs:
+  check:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Check for new openings
+        env:
+          YATZ_EMAIL: ${{ secrets.YATZ_EMAIL }}
+          YATZ_PASSWORD: ${{ secrets.YATZ_PASSWORD }}
+          TELEGRAM_BOT_TOKEN: ${{ secrets.TELEGRAM_BOT_TOKEN }}
+          TELEGRAM_CHAT_ID: ${{ secrets.TELEGRAM_CHAT_ID }}
+          # Uncomment to test the workflow without sending real messages:
+          # DRY_RUN: "1"
+        run: bash monitor.sh
+
+      - name: Commit state if it changed
+        run: |
+          git add state.json
+          if git diff --cached --quiet; then
+            echo "No change in openings — nothing to commit."
+          else
+            git config user.name  "github-actions[bot]"
+            git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+            git commit -m "Update openings state [skip ci]"
+            git push
+          fi
