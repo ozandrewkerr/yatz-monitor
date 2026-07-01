@@ -1,0 +1,42 @@
+{
+  "openSlots": [
+    3961,
+    3962,
+    3964,
+    4020
+  ],
+  "detail": [
+    {
+      "slotNum": 3961,
+      "title": "Induction for NEW YATZ",
+      "start": "2026-07-06T09:45:00.000-04:00",
+      "volsNeeded": 2,
+      "place": "Taronga Zoo Sydney",
+      "note": "May 2026 Induction - Option #2"
+    },
+    {
+      "slotNum": 3962,
+      "title": "First Spike Mandatory Training",
+      "start": "2026-07-07T08:30:00.000-04:00",
+      "volsNeeded": 2,
+      "place": "Taronga Zoo Sydney",
+      "note": "Option #1"
+    },
+    {
+      "slotNum": 3964,
+      "title": "First Spike Mandatory Training",
+      "start": "2026-07-07T13:00:00.000-04:00",
+      "volsNeeded": 5,
+      "place": "Taronga Zoo Sydney",
+      "note": "Option #3"
+    },
+    {
+      "slotNum": 4020,
+      "title": "Special Events",
+      "start": "2026-07-15T17:00:00.000-04:00",
+      "volsNeeded": 14,
+      "place": "Taronga Zoo Sydney",
+      "note": "Annual Awards and Social Night"
+    }
+  ]
+}
