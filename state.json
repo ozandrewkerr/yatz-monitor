@@ -26,7 +26,7 @@
       "slotNum": 3964,
       "title": "First Spike Mandatory Training",
       "start": "2026-07-07T13:00:00.000-04:00",
-      "volsNeeded": 5,
+      "volsNeeded": 6,
       "place": "Taronga Zoo Sydney",
       "note": "Option #3"
     },
@@ -34,7 +34,7 @@
       "slotNum": 4020,
       "title": "Special Events",
       "start": "2026-07-15T17:00:00.000-04:00",
-      "volsNeeded": 14,
+      "volsNeeded": 13,
       "place": "Taronga Zoo Sydney",
       "note": "Annual Awards and Social Night"
     }
