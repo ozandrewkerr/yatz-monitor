@@ -3,6 +3,9 @@
     3961,
     3962,
     3964,
+    3987,
+    3988,
+    3990,
     4020,
     4066,
     4067,
@@ -32,6 +35,30 @@
       "volsNeeded": 5,
       "place": "Taronga Zoo Sydney",
       "note": "Option #3"
+    },
+    {
+      "slotNum": 3987,
+      "title": "YATZeD",
+      "start": "2026-07-13T13:00:00.000-04:00",
+      "volsNeeded": 1,
+      "place": "Taronga Zoo Sydney",
+      "note": "Vet Careers: Seminar Rm 3"
+    },
+    {
+      "slotNum": 3988,
+      "title": "YATZeD",
+      "start": "2026-07-14T10:30:00.000-04:00",
+      "volsNeeded": 1,
+      "place": "Taronga Zoo Sydney",
+      "note": "TISL Animals and Spaces: Seminar Rm 3"
+    },
+    {
+      "slotNum": 3990,
+      "title": "YATZeD",
+      "start": "2026-07-16T10:00:00.000-04:00",
+      "volsNeeded": 1,
+      "place": "Taronga Zoo Sydney",
+      "note": "Enrichment Workshop ; Seminar Rm 3"
     },
     {
       "slotNum": 4020,
