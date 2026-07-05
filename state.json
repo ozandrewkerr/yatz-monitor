@@ -46,7 +46,7 @@
       "slotNum": 4063,
       "title": "Special Events",
       "start": "2026-07-07T11:00:00.000-04:00",
-      "volsNeeded": 1,
+      "volsNeeded": 2,
       "place": "Taronga Zoo Sydney",
       "note": "NAIDOC Activity: Drop In Weaving Workshop (Cultural Circle near Retreat)"
     },
@@ -62,7 +62,7 @@
       "slotNum": 4067,
       "title": "Activities for NEW YATZ only",
       "start": "2026-07-09T11:00:00.000-04:00",
-      "volsNeeded": 2,
+      "volsNeeded": 1,
       "place": "Taronga Zoo Sydney",
       "note": "NAIDOC Activity: Drop In Art Workshop; Burra Guru Rooms (upstairs TISL)"
     },
@@ -70,7 +70,7 @@
       "slotNum": 4068,
       "title": "Activities for NEW YATZ only",
       "start": "2026-07-09T12:00:00.000-04:00",
-      "volsNeeded": 6,
+      "volsNeeded": 5,
       "place": "Taronga Zoo Sydney",
       "note": "NAIDOC Activity: Drop In Art Workshop; Burra Guru Rooms (upstairs TISL)"
     }
