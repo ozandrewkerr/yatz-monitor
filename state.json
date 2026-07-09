@@ -1,24 +1,15 @@
 {
   "openSlots": [
-    3962,
-    3964
+    4017
   ],
   "detail": [
     {
-      "slotNum": 3962,
-      "title": "First Spike Mandatory Training",
-      "start": "2026-07-07T08:30:00.000-04:00",
-      "volsNeeded": 3,
+      "slotNum": 4017,
+      "title": "Zoo Adventures",
+      "start": "2026-07-09T12:00:00.000-04:00",
+      "volsNeeded": 1,
       "place": "Taronga Zoo Sydney",
-      "note": "Option #1"
-    },
-    {
-      "slotNum": 3964,
-      "title": "First Spike Mandatory Training",
-      "start": "2026-07-07T13:00:00.000-04:00",
-      "volsNeeded": 2,
-      "place": "Taronga Zoo Sydney",
-      "note": "Option #3"
+      "note": "Afternoon Shift"
     }
   ]
 }
