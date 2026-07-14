@@ -10,9 +10,15 @@
 # alert on genuinely new openings. On the very first run (no state.json) it
 # silently seeds the baseline without alerting.
 #
+# It ALSO sends one "daily digest" message per day — a snapshot of what's
+# currently open — the first time it runs at/after DIGEST_HOUR in DIGEST_TZ.
+# A once-per-day guard (lastDigest in state.json) means cron drift/DST can't
+# double-send or miss it.
+#
 # Required env (secrets):     YATZ_EMAIL  YATZ_PASSWORD
 # Telegram env (live alerts): TELEGRAM_BOT_TOKEN  TELEGRAM_CHAT_ID
 # Optional env:               MONTHS_AHEAD(3)  STATE_FILE(state.json)  DRY_RUN(unset)
+#                             DIGEST_HOUR(12)  DIGEST_TZ(Australia/Sydney)
 #                             YATZ_FROM  YATZ_API_KEY  YATZ_CLIENT_VERSION
 
 set -euo pipefail
@@ -28,6 +34,8 @@ YATZ_CLIENT_VERSION="${YATZ_CLIENT_VERSION:-1.8.0}"
 MONTHS_AHEAD="${MONTHS_AHEAD:-3}"            # scan current month + this many ahead
 STATE_FILE="${STATE_FILE:-state.json}"
 DRY_RUN="${DRY_RUN:-}"                       # set to anything to print instead of texting
+DIGEST_HOUR="${DIGEST_HOUR:-12}"             # send daily snapshot at/after this hour...
+DIGEST_TZ="${DIGEST_TZ:-Australia/Sydney}"   # ...in this timezone (handles DST automatically)
 BASE="https://www.volgistics.com/api/vicnet"
 UA="Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/126.0.0.0 Safari/537.36"
 
@@ -59,6 +67,19 @@ send_telegram() {
     log "Telegram FAILED (HTTP $code): $(printf '%s' "$resp" | sed '$d' | head -c 300)"
     return 1
   fi
+}
+
+# Build the daily-digest message body from the current open slots ($1 = date header).
+build_digest_msg() {
+  local date_h="$1"
+  printf '%s' "$current" | jq -r --arg d "$date_h" '
+    if length == 0 then
+      "Daily YATZ update (\($d)): no open shifts right now."
+    else
+      "Daily YATZ update (\($d)): \(length) shift(s) open:\n"
+      + ( [ .[] | "- \(.title), \(.start[0:10]) \(.start[11:16]) (\(.volsNeeded) spot(s))" ] | join("\n") )
+      + "\nSign up: https://www.volgistics.com/vicnet/201756"
+    end'
 }
 
 # ------------------------------------------------------------------ login ---
@@ -116,8 +137,10 @@ log "current open slots: $(printf '%s' "$current" | jq 'length')  -> ids $curren
 # ----------------------------------------------------- diff vs state --------
 first_run=0
 prev_ids='[]'
+prev_last_digest=''
 if [ -f "$STATE_FILE" ]; then
   prev_ids=$(jq -c '.openSlots // []' "$STATE_FILE" 2>/dev/null || echo '[]')
+  prev_last_digest=$(jq -r '.lastDigest // ""' "$STATE_FILE" 2>/dev/null || echo '')
 else
   first_run=1
 fi
@@ -143,9 +166,27 @@ else
   log "no new openings"
 fi
 
+# ----------------------------------------------------- daily digest ---------
+# Send one snapshot per day, the first run at/after DIGEST_HOUR (local DIGEST_TZ).
+# The lastDigest date guard makes this exactly-once-per-day, drift/DST-proof.
+new_last_digest="$prev_last_digest"
+syd_date=$(TZ="$DIGEST_TZ" date +%F)
+syd_hour=$(( 10#$(TZ="$DIGEST_TZ" date +%H) ))
+if [ "$syd_hour" -ge "$DIGEST_HOUR" ] && [ "$prev_last_digest" != "$syd_date" ]; then
+  syd_human=$(TZ="$DIGEST_TZ" date "+%a %d %b")
+  log "sending daily digest for $syd_date ($DIGEST_TZ)"
+  if send_telegram "$(build_digest_msg "$syd_human")"; then
+    new_last_digest="$syd_date"
+  else
+    log "digest send failed (will retry next run)"
+  fi
+else
+  log "no digest due (local hour $syd_hour, last sent '${prev_last_digest:-never}')"
+fi
+
 # ----------------------------------------------------- write state ----------
-# No timestamp on purpose: the file only changes when openings change, so the
-# Actions workflow commits only on real changes (not every run).
-jq -n --argjson ids "$current_ids" --argjson detail "$current" \
-  '{ openSlots: ($ids | sort), detail: ($detail | sort_by(.slotNum)) }' > "$STATE_FILE"
+# No timestamp on purpose: the file only changes when openings (or the daily
+# digest date) change, so the Actions workflow commits only on real changes.
+jq -n --argjson ids "$current_ids" --argjson detail "$current" --arg ld "$new_last_digest" \
+  '{ openSlots: ($ids | sort), detail: ($detail | sort_by(.slotNum)), lastDigest: $ld }' > "$STATE_FILE"
 log "state written to $STATE_FILE"
