@@ -1,6 +1,7 @@
 {
   "openSlots": [
     3988,
+    3992,
     4008,
     4020
   ],
@@ -12,6 +13,14 @@
       "volsNeeded": 2,
       "place": "Taronga Zoo Sydney",
       "note": "TISL Animals and Spaces: Seminar Rm 3"
+    },
+    {
+      "slotNum": 3992,
+      "title": "YATZeD",
+      "start": "2026-07-17T10:00:00.000-04:00",
+      "volsNeeded": 1,
+      "place": "Taronga Zoo Sydney",
+      "note": "Zoo Keeping Careers: Seminar Rm 3"
     },
     {
       "slotNum": 4008,
