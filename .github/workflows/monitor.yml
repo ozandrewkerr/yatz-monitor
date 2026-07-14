@@ -2,14 +2,14 @@ name: YATZ openings monitor
 
 on:
   schedule:
-    # Every 5 minutes. GitHub's scheduler is best-effort and often drifts to
-    # 5-15 min under load. Scheduled runs only fire on the default branch, and
-    # GitHub disables schedules after 60 days of repo inactivity.
-    - cron: '*/5 * * * *'
-  workflow_dispatch: {}   # lets you run it on demand from the Actions tab
+    # GitHub cron can't fire more often than every 5 min (and drifts), so instead
+    # we fire a "heartbeat" every 15 min and each run then polls once a minute for
+    # ~13 min — giving roughly 1-minute checks. Free because the repo is public.
+    - cron: '*/15 * * * *'
+  workflow_dispatch: {}
 
 permissions:
-  contents: write          # needed to commit the updated state.json
+  contents: write
 
 concurrency:
   group: yatz-monitor
@@ -18,27 +18,32 @@ concurrency:
 jobs:
   check:
     runs-on: ubuntu-latest
+    timeout-minutes: 20
     steps:
       - uses: actions/checkout@v4
 
-      - name: Check for new openings
+      - name: Poll every minute for ~13 minutes
         env:
           YATZ_EMAIL: ${{ secrets.YATZ_EMAIL }}
           YATZ_PASSWORD: ${{ secrets.YATZ_PASSWORD }}
           TELEGRAM_BOT_TOKEN: ${{ secrets.TELEGRAM_BOT_TOKEN }}
           TELEGRAM_CHAT_ID: ${{ secrets.TELEGRAM_CHAT_ID }}
-          # Uncomment to test the workflow without sending real messages:
-          # DRY_RUN: "1"
-        run: bash monitor.sh
-
-      - name: Commit state if it changed
         run: |
-          git add state.json
-          if git diff --cached --quiet; then
-            echo "No change in openings — nothing to commit."
-          else
-            git config user.name  "github-actions[bot]"
-            git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
-            git commit -m "Update openings state [skip ci]"
-            git push
-          fi
+          git config user.name  "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          end=$(( $(date +%s) + 13*60 ))
+          n=0
+          while [ "$(date +%s)" -lt "$end" ]; do
+            n=$((n + 1))
+            echo "::group::check #$n"
+            bash monitor.sh || true
+            echo "::endgroup::"
+            # Persist state only when it actually changed (keeps commits rare).
+            if ! git diff --quiet -- state.json 2>/dev/null; then
+              git add state.json
+              git commit -q -m "Update openings state [skip ci]" || true
+              git push -q || true
+            fi
+            [ "$(date +%s)" -lt "$end" ] && sleep 60
+          done
+          echo "completed $n checks this run"
