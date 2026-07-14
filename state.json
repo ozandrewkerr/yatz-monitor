@@ -1,8 +1,7 @@
 {
   "openSlots": [
     3988,
-    4008,
-    4020
+    4008
   ],
   "detail": [
     {
@@ -20,14 +19,6 @@
       "volsNeeded": 1,
       "place": "Taronga Zoo Sydney",
       "note": "Artic Penguins: Seminar Rm 3"
-    },
-    {
-      "slotNum": 4020,
-      "title": "Special Events",
-      "start": "2026-07-15T17:00:00.000-04:00",
-      "volsNeeded": 3,
-      "place": "Taronga Zoo Sydney",
-      "note": "Annual Awards and Social Night"
     }
   ],
   "lastDigest": "2026-07-14"
