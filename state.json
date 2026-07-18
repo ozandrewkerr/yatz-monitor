@@ -1,16 +1,5 @@
 {
-  "openSlots": [
-    3991
-  ],
-  "detail": [
-    {
-      "slotNum": 3991,
-      "title": "YATZeD",
-      "start": "2026-07-16T11:00:00.000-04:00",
-      "volsNeeded": 1,
-      "place": "Taronga Zoo Sydney",
-      "note": "Dungeons & Dragons Meet Up ; Lower Lecture Theatre"
-    }
-  ],
-  "lastDigest": "2026-07-17"
+  "openSlots": [],
+  "detail": [],
+  "lastDigest": "2026-07-18"
 }
