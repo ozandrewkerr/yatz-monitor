@@ -44,6 +44,6 @@ jobs:
               git commit -q -m "Update openings state [skip ci]" || true
               git push -q || true
             fi
-            [ "$(date +%s)" -lt "$end" ] && sleep 60
+            [ "$(date +%s)" -lt "$end" ] && sleep 30
           done
           echo "completed $n checks this run"
