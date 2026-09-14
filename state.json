@@ -1,5 +1,61 @@
 {
-  "openSlots": [],
-  "detail": [],
+  "openSlots": [
+    4135,
+    4138,
+    4140,
+    4144,
+    4151,
+    4152
+  ],
+  "detail": [
+    {
+      "slotNum": 4135,
+      "title": "Special Events",
+      "start": "2026-09-29T17:30:00.000-04:00",
+      "volsNeeded": 117,
+      "place": "Taronga Zoo Sydney",
+      "note": "'Plasctics Country' - Movie Screening with Director Q&A: Lecture Theatre"
+    },
+    {
+      "slotNum": 4138,
+      "title": "YATZeD",
+      "start": "2026-10-06T11:00:00.000-04:00",
+      "volsNeeded": 13,
+      "place": "Taronga Zoo Sydney",
+      "note": "CHANGED FROM ORIGIANL DATE: HSC Biology Study Session with Teacher Ash; Meet on The Big Steps"
+    },
+    {
+      "slotNum": 4140,
+      "title": "YATZeD",
+      "start": "2026-10-01T09:00:00.000-04:00",
+      "volsNeeded": 1,
+      "place": "Taronga Zoo Sydney",
+      "note": "History of Australian Zoos: Seminar Room 1"
+    },
+    {
+      "slotNum": 4144,
+      "title": "YATZeD",
+      "start": "2026-10-06T11:00:00.000-04:00",
+      "volsNeeded": 1,
+      "place": "Taronga Zoo Sydney",
+      "note": "Dungeons and Dragons Meet Up: Room TBC"
+    },
+    {
+      "slotNum": 4151,
+      "title": "YATZeD",
+      "start": "2026-10-08T08:00:00.000-04:00",
+      "volsNeeded": 14,
+      "place": "Taronga Zoo Sydney",
+      "note": "YATZ Alumni Career Day: Seminar Room 2"
+    },
+    {
+      "slotNum": 4152,
+      "title": "YATZeD",
+      "start": "2026-09-29T13:00:00.000-04:00",
+      "volsNeeded": 14,
+      "place": "Taronga Zoo Sydney",
+      "note": "Eco Mind Wellbeing Workshop: Seminar Room 3"
+    }
+  ],
   "lastDigest": "2026-09-14"
 }
