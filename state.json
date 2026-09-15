@@ -10,7 +10,7 @@
       "slotNum": 4135,
       "title": "Special Events",
       "start": "2026-09-29T17:30:00.000-04:00",
-      "volsNeeded": 111,
+      "volsNeeded": 107,
       "place": "Taronga Zoo Sydney",
       "note": "'Plasctics Country' - Movie Screening with Director Q&A: Lecture Theatre"
     },
@@ -26,7 +26,7 @@
       "slotNum": 4151,
       "title": "YATZeD",
       "start": "2026-10-08T08:00:00.000-04:00",
-      "volsNeeded": 12,
+      "volsNeeded": 11,
       "place": "Taronga Zoo Sydney",
       "note": "YATZ Alumni Career Day: Seminar Room 2"
     },
@@ -34,7 +34,7 @@
       "slotNum": 4152,
       "title": "YATZeD",
       "start": "2026-09-29T13:00:00.000-04:00",
-      "volsNeeded": 10,
+      "volsNeeded": 6,
       "place": "Taronga Zoo Sydney",
       "note": "Eco Mind Wellbeing Workshop: Seminar Room 3"
     }
