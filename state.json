@@ -1,11 +1,22 @@
 {
   "openSlots": [
+    4134,
     4135,
     4138,
+    4146,
     4151,
-    4152
+    4152,
+    4280
   ],
   "detail": [
+    {
+      "slotNum": 4134,
+      "title": "YATZeD",
+      "start": "2026-10-09T11:00:00.000-04:00",
+      "volsNeeded": 1,
+      "place": "Taronga Zoo Sydney",
+      "note": "ZooKeeping Careers and Duties: Seminar Room 3"
+    },
     {
       "slotNum": 4135,
       "title": "Special Events",
@@ -23,6 +34,14 @@
       "note": "CHANGED FROM ORIGIANL DATE: HSC Biology Study Session with Teacher Ash; Meet on The Big Steps"
     },
     {
+      "slotNum": 4146,
+      "title": "YATZeD",
+      "start": "2026-09-30T10:00:00.000-04:00",
+      "volsNeeded": 1,
+      "place": "Taronga Zoo Sydney",
+      "note": "Disney Animals: Seminar Room 3"
+    },
+    {
       "slotNum": 4151,
       "title": "YATZeD",
       "start": "2026-10-08T08:00:00.000-04:00",
@@ -37,6 +56,14 @@
       "volsNeeded": 5,
       "place": "Taronga Zoo Sydney",
       "note": "Eco Mind Wellbeing Workshop: Seminar Room 3"
+    },
+    {
+      "slotNum": 4280,
+      "title": "Special Events",
+      "start": "2026-10-02T14:00:00.000-04:00",
+      "volsNeeded": 25,
+      "place": "Taronga Zoo Sydney",
+      "note": "YATZ Alumni Program Consultation with Nathan : recommended for 16+"
     }
   ],
   "lastDigest": "2026-09-20"
