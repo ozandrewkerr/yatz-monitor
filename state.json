@@ -1,5 +1,6 @@
 {
   "openSlots": [
+    4128,
     4135,
     4138,
     4151,
@@ -7,6 +8,14 @@
     4280
   ],
   "detail": [
+    {
+      "slotNum": 4128,
+      "title": "Campaigns & Activations",
+      "start": "2026-09-26T10:00:00.000-04:00",
+      "volsNeeded": 1,
+      "place": "Taronga Zoo Sydney",
+      "note": "Nura Diya Australian Surveys; surveying guests on their Australian experince: Meet GEO In The Hive"
+    },
     {
       "slotNum": 4135,
       "title": "Special Events",
@@ -43,10 +52,10 @@
       "slotNum": 4280,
       "title": "Special Events",
       "start": "2026-10-02T14:00:00.000-04:00",
-      "volsNeeded": 23,
+      "volsNeeded": 22,
       "place": "Taronga Zoo Sydney",
       "note": "YATZ Alumni Program Consultation with Nathan : recommended for 16+"
     }
   ],
-  "lastDigest": "2026-09-21"
+  "lastDigest": "2026-09-22"
 }
