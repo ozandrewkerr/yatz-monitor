@@ -1,6 +1,6 @@
 {
   "openSlots": [
-    4128,
+    4129,
     4135,
     4138,
     4140,
@@ -10,17 +10,17 @@
   ],
   "detail": [
     {
-      "slotNum": 4128,
+      "slotNum": 4129,
       "title": "Campaigns & Activations",
-      "start": "2026-09-29T10:00:00.000-04:00",
+      "start": "2026-09-30T10:30:00.000-04:00",
       "volsNeeded": 1,
       "place": "Taronga Zoo Sydney",
-      "note": "Nura Diya Australian Surveys; surveying guests on their Australian experince: Meet GEO In The Hive"
+      "note": "Backyard to Bush Farmyard Spot Guiding: meet GEO at B2B Farmyard"
     },
     {
       "slotNum": 4135,
       "title": "Special Events",
-      "start": "2026-09-29T17:30:00.000-04:00",
+      "start": "2026-09-29T17:15:00.000-04:00",
       "volsNeeded": 101,
       "place": "Taronga Zoo Sydney",
       "note": "'Plasctics Country' - Movie Screening with Director Q&A: Lecture Theatre"
@@ -37,7 +37,7 @@
       "slotNum": 4140,
       "title": "YATZeD",
       "start": "2026-10-01T09:00:00.000-04:00",
-      "volsNeeded": 2,
+      "volsNeeded": 1,
       "place": "Taronga Zoo Sydney",
       "note": "History of Australian Zoos: Seminar Room 1"
     },
