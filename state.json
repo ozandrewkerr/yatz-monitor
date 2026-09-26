@@ -1,25 +1,35 @@
 {
   "openSlots": [
-    4133,
+    4126,
+    4128,
     4135,
     4138,
+    4139,
     4151,
     4280
   ],
   "detail": [
     {
-      "slotNum": 4133,
-      "title": "Activities for NEW YATZ only",
-      "start": "2026-09-29T10:00:00.000-04:00",
+      "slotNum": 4126,
+      "title": "Campaigns & Activations",
+      "start": "2026-10-06T10:00:00.000-04:00",
       "volsNeeded": 1,
       "place": "Taronga Zoo Sydney",
-      "note": "Nocturnal Animals: Meet in Sem Room 3"
+      "note": "MSC Sustainable Fishing Game: Meet staff in The Hive"
+    },
+    {
+      "slotNum": 4128,
+      "title": "Campaigns & Activations",
+      "start": "2026-09-28T10:00:00.000-04:00",
+      "volsNeeded": 1,
+      "place": "Taronga Zoo Sydney",
+      "note": "Nura Diya Australian Surveys; surveying guests on their Australian experince: Meet GEO In The Hive"
     },
     {
       "slotNum": 4135,
       "title": "Special Events",
       "start": "2026-09-29T17:15:00.000-04:00",
-      "volsNeeded": 101,
+      "volsNeeded": 100,
       "place": "Taronga Zoo Sydney",
       "note": "'Plasctics Country' - Movie Screening with Director Q&A: Lecture Theatre"
     },
@@ -32,10 +42,18 @@
       "note": "CHANGED FROM ORIGIANL DATE: HSC Biology Study Session with Teacher Ash; Meet on The Big Steps"
     },
     {
+      "slotNum": 4139,
+      "title": "YATZeD",
+      "start": "2026-10-06T10:00:00.000-04:00",
+      "volsNeeded": 1,
+      "place": "Taronga Zoo Sydney",
+      "note": "Australian Deadly Spiders: Burra Guru (upstairs)"
+    },
+    {
       "slotNum": 4151,
       "title": "YATZeD",
       "start": "2026-10-08T08:00:00.000-04:00",
-      "volsNeeded": 6,
+      "volsNeeded": 4,
       "place": "Taronga Zoo Sydney",
       "note": "YATZ Alumni Career Day: Seminar Room 2"
     },
