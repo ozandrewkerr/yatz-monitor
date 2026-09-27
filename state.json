@@ -1,23 +1,13 @@
 {
   "openSlots": [
-    4129,
     4135,
     4138,
     4140,
-    4145,
     4151,
     4152,
     4280
   ],
   "detail": [
-    {
-      "slotNum": 4129,
-      "title": "Campaigns & Activations",
-      "start": "2026-09-29T10:30:00.000-04:00",
-      "volsNeeded": 1,
-      "place": "Taronga Zoo Sydney",
-      "note": "Backyard to Bush Farmyard Spot Guiding: meet GEO at B2B Farmyard"
-    },
     {
       "slotNum": 4135,
       "title": "Special Events",
@@ -30,7 +20,7 @@
       "slotNum": 4138,
       "title": "YATZeD",
       "start": "2026-10-06T11:00:00.000-04:00",
-      "volsNeeded": 8,
+      "volsNeeded": 9,
       "place": "Taronga Zoo Sydney",
       "note": "CHANGED FROM ORIGIANL DATE: HSC Biology Study Session with Teacher Ash; Meet on The Big Steps"
     },
@@ -41,14 +31,6 @@
       "volsNeeded": 1,
       "place": "Taronga Zoo Sydney",
       "note": "History of Australian Zoos: Seminar Room 1"
-    },
-    {
-      "slotNum": 4145,
-      "title": "YATZeD",
-      "start": "2026-09-30T13:00:00.000-04:00",
-      "volsNeeded": 1,
-      "place": "Taronga Zoo Sydney",
-      "note": "Evolutionary History of Aussie Mammals: Seminar Room 3"
     },
     {
       "slotNum": 4151,
