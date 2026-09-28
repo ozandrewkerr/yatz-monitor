@@ -1,26 +1,16 @@
 {
   "openSlots": [
-    4128,
     4135,
     4138,
     4151,
-    4152,
     4280
   ],
   "detail": [
     {
-      "slotNum": 4128,
-      "title": "Campaigns & Activations",
-      "start": "2026-09-30T10:00:00.000-04:00",
-      "volsNeeded": 1,
-      "place": "Taronga Zoo Sydney",
-      "note": "Nura Diya Australian Surveys; surveying guests on their Australian experince: Meet GEO In The Hive"
-    },
-    {
       "slotNum": 4135,
       "title": "Special Events",
       "start": "2026-09-29T17:15:00.000-04:00",
-      "volsNeeded": 99,
+      "volsNeeded": 98,
       "place": "Taronga Zoo Sydney",
       "note": "'Plastics Country' - Movie Screening with Director Q&A: Lecture Theatre"
     },
@@ -36,17 +26,9 @@
       "slotNum": 4151,
       "title": "YATZeD",
       "start": "2026-10-08T08:00:00.000-04:00",
-      "volsNeeded": 3,
+      "volsNeeded": 4,
       "place": "Taronga Zoo Sydney",
       "note": "YATZ Alumni Career Day: Seminar Room 2"
-    },
-    {
-      "slotNum": 4152,
-      "title": "YATZeD",
-      "start": "2026-09-29T13:00:00.000-04:00",
-      "volsNeeded": 1,
-      "place": "Taronga Zoo Sydney",
-      "note": "Eco Mind Wellbeing Workshop: Seminar Room 3"
     },
     {
       "slotNum": 4280,
