@@ -1,5 +1,6 @@
 {
   "openSlots": [
+    4126,
     4133,
     4138,
     4145,
@@ -7,6 +8,14 @@
     4280
   ],
   "detail": [
+    {
+      "slotNum": 4126,
+      "title": "Campaigns & Activations",
+      "start": "2026-09-30T10:00:00.000-04:00",
+      "volsNeeded": 1,
+      "place": "Taronga Zoo Sydney",
+      "note": "MSC Sustainable Fishing Game: Meet staff in The Hive"
+    },
     {
       "slotNum": 4133,
       "title": "Activities for NEW YATZ only",
