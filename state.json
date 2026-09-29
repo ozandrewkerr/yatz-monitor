@@ -26,7 +26,7 @@
       "slotNum": 4151,
       "title": "YATZeD",
       "start": "2026-10-08T08:00:00.000-04:00",
-      "volsNeeded": 3,
+      "volsNeeded": 4,
       "place": "Taronga Zoo Sydney",
       "note": "YATZ Alumni Career Day: Seminar Room 2"
     },
@@ -34,10 +34,10 @@
       "slotNum": 4280,
       "title": "Special Events",
       "start": "2026-10-02T14:00:00.000-04:00",
-      "volsNeeded": 16,
+      "volsNeeded": 15,
       "place": "Taronga Zoo Sydney",
       "note": "YATZ Alumni Program Consultation with Nathan : recommended for 16+"
     }
   ],
-  "lastDigest": "2026-09-28"
+  "lastDigest": "2026-09-29"
 }
