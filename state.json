@@ -1,18 +1,18 @@
 {
   "openSlots": [
-    4135,
+    4133,
     4138,
     4151,
     4280
   ],
   "detail": [
     {
-      "slotNum": 4135,
-      "title": "Special Events",
-      "start": "2026-09-29T17:15:00.000-04:00",
-      "volsNeeded": 98,
+      "slotNum": 4133,
+      "title": "Activities for NEW YATZ only",
+      "start": "2026-09-29T10:00:00.000-04:00",
+      "volsNeeded": 2,
       "place": "Taronga Zoo Sydney",
-      "note": "'Plastics Country' - Movie Screening with Director Q&A: Lecture Theatre"
+      "note": "Nocturnal Animals: Meet in Sem Room 3"
     },
     {
       "slotNum": 4138,
@@ -26,7 +26,7 @@
       "slotNum": 4151,
       "title": "YATZeD",
       "start": "2026-10-08T08:00:00.000-04:00",
-      "volsNeeded": 4,
+      "volsNeeded": 3,
       "place": "Taronga Zoo Sydney",
       "note": "YATZ Alumni Career Day: Seminar Room 2"
     },
