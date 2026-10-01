@@ -4,7 +4,6 @@
     4128,
     4138,
     4151,
-    4154,
     4280
   ],
   "detail": [
@@ -41,14 +40,6 @@
       "note": "YATZ Alumni Career Day: Seminar Room 2"
     },
     {
-      "slotNum": 4154,
-      "title": "Zoo Adventures",
-      "start": "2026-10-01T12:00:00.000-04:00",
-      "volsNeeded": 1,
-      "place": "Taronga Zoo Sydney",
-      "note": "Afternoon Shift: meet Leader/staff in The Hive"
-    },
-    {
       "slotNum": 4280,
       "title": "Special Events",
       "start": "2026-10-02T14:00:00.000-04:00",
@@ -57,5 +48,5 @@
       "note": "YATZ Alumni Program Consultation with Nathan : recommended for 16+"
     }
   ],
-  "lastDigest": "2026-09-30"
+  "lastDigest": "2026-10-01"
 }
