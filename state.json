@@ -2,6 +2,7 @@
   "openSlots": [
     4129,
     4138,
+    4143,
     4151,
     4280
   ],
@@ -21,6 +22,14 @@
       "volsNeeded": 6,
       "place": "Taronga Zoo Sydney",
       "note": "CHANGED FROM ORIGIANL DATE: HSC Biology Study Session with Teacher Ash; Meet on The Big Steps"
+    },
+    {
+      "slotNum": 4143,
+      "title": "YATZeD",
+      "start": "2026-10-07T11:00:00.000-04:00",
+      "volsNeeded": 1,
+      "place": "Taronga Zoo Sydney",
+      "note": "Behaviour and Husbandry: Seminar Room 3"
     },
     {
       "slotNum": 4151,
