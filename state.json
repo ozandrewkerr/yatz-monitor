@@ -1,9 +1,27 @@
 {
   "openSlots": [
+    4128,
+    4129,
     4138,
     4151
   ],
   "detail": [
+    {
+      "slotNum": 4128,
+      "title": "Campaigns & Activations",
+      "start": "2026-10-07T10:00:00.000-04:00",
+      "volsNeeded": 1,
+      "place": "Taronga Zoo Sydney",
+      "note": "Nura Diya Australian Surveys; surveying guests on their Australian experince: Meet GEO In The Hive"
+    },
+    {
+      "slotNum": 4129,
+      "title": "Campaigns & Activations",
+      "start": "2026-10-08T10:30:00.000-04:00",
+      "volsNeeded": 1,
+      "place": "Taronga Zoo Sydney",
+      "note": "Backyard to Bush Farmyard Spot Guiding: meet GEO at B2B Farmyard"
+    },
     {
       "slotNum": 4138,
       "title": "YATZeD",
@@ -16,7 +34,7 @@
       "slotNum": 4151,
       "title": "YATZeD",
       "start": "2026-10-08T08:00:00.000-04:00",
-      "volsNeeded": 2,
+      "volsNeeded": 1,
       "place": "Taronga Zoo Sydney",
       "note": "YATZ Alumni Career Day: Seminar Room 2"
     }
