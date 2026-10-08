@@ -2,6 +2,7 @@
   "openSlots": [
     4126,
     4128,
+    4134,
     4143,
     4151
   ],
@@ -21,6 +22,14 @@
       "volsNeeded": 1,
       "place": "Taronga Zoo Sydney",
       "note": "Nura Diya Australian Surveys; surveying guests on their Australian experince: Meet GEO In The Hive"
+    },
+    {
+      "slotNum": 4134,
+      "title": "YATZeD",
+      "start": "2026-10-09T11:00:00.000-04:00",
+      "volsNeeded": 3,
+      "place": "Taronga Zoo Sydney",
+      "note": "ZooKeeping Careers and Duties: Seminar Room 3"
     },
     {
       "slotNum": 4143,
