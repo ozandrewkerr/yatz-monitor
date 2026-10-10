@@ -1,8 +1,7 @@
 {
   "openSlots": [
     4128,
-    4134,
-    4151
+    4134
   ],
   "detail": [
     {
@@ -20,15 +19,7 @@
       "volsNeeded": 4,
       "place": "Taronga Zoo Sydney",
       "note": "ZooKeeping Careers and Duties: Seminar Room 3"
-    },
-    {
-      "slotNum": 4151,
-      "title": "YATZeD",
-      "start": "2026-10-08T08:00:00.000-04:00",
-      "volsNeeded": 1,
-      "place": "Taronga Zoo Sydney",
-      "note": "YATZ Alumni Career Day: Seminar Room 2"
     }
   ],
-  "lastDigest": "2026-10-09"
+  "lastDigest": "2026-10-10"
 }
