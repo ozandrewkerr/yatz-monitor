@@ -1,5 +1,16 @@
 {
-  "openSlots": [],
-  "detail": [],
+  "openSlots": [
+    4287
+  ],
+  "detail": [
+    {
+      "slotNum": 4287,
+      "title": "Special Events",
+      "start": "2026-10-16T16:30:00.000-04:00",
+      "volsNeeded": 6,
+      "place": "Taronga Zoo Sydney",
+      "note": "Stepping Stones House, meet Vanda in the Main Entry Heritage Archway"
+    }
+  ],
   "lastDigest": "2026-10-11"
 }
