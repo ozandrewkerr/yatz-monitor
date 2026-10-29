@@ -1,5 +1,16 @@
 {
-  "openSlots": [],
-  "detail": [],
+  "openSlots": [
+    4306
+  ],
+  "detail": [
+    {
+      "slotNum": 4306,
+      "title": "Lunch & Learns",
+      "start": "2026-11-03T12:30:00.000-05:00",
+      "volsNeeded": 20,
+      "place": "Taronga Zoo Sydney",
+      "note": "Whos Who In The Zoo S7 Ep1 Screening; see notes"
+    }
+  ],
   "lastDigest": "2026-10-28"
 }
