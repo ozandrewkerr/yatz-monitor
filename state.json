@@ -1,5 +1,16 @@
 {
-  "openSlots": [],
-  "detail": [],
-  "lastDigest": "2026-11-24"
+  "openSlots": [
+    4380
+  ],
+  "detail": [
+    {
+      "slotNum": 4380,
+      "title": "Lunch & Learns",
+      "start": "2026-12-09T12:00:00.000-05:00",
+      "volsNeeded": 17,
+      "place": "Taronga Zoo Sydney",
+      "note": "Lucy Ockert on Little Penguins Genomics; TISL Lecture Theatre"
+    }
+  ],
+  "lastDigest": "2026-11-25"
 }
